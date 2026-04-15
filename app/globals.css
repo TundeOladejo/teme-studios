@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #2E231F;
+  --cream: #E8DED2;
+  --cream-light: #E8DED2;
+  --dark-brown: #2E231F;
+  --medium-brown: #4A3933;
+  --tan: #9B8B7E;
+  --terracotta: #C97B63;
+  --peach: #E8A48E;
+  --text-muted: #9B8B7E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-cream: var(--cream);
+  --color-cream-light: var(--cream-light);
+  --color-dark-brown: var(--dark-brown);
+  --color-medium-brown: var(--medium-brown);
+  --color-tan: var(--tan);
+  --color-terracotta: var(--terracotta);
+  --color-peach: var(--peach);
+  --color-text-muted: var(--text-muted);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure cream-light sections read correctly against the warm page bg */
+.bg-cream-light {
+  background: var(--cream-light);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
 }
