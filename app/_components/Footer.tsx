@@ -17,23 +17,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Brand + newsletter */}
           <div className="md:col-span-4 space-y-8">
-            <p className="text-[#9B8B7E] leading-relaxed mb-8">
+            <p className="text-[#4A3933] leading-relaxed mb-8">
               Join our newsletter to stay up to date on features and releases.
             </p>
             <form className="flex flex-col sm:flex-row gap-2 max-w-xl">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 border-b border-[#4A3933] text-xs py-3 outline-none focus:border-[#2E231F] bg-transparent placeholder:text-[#9B8B7E]"
+                className="flex-1 border-b-2 border-[#4A3933] py-3 outline-none focus:border-[#2E231F] bg-transparent placeholder:text-[#9B8B7E]"
               />
               <button
                 type="submit"
-                className="text-xs cursor-pointer border border-[#4A3933] px-4 py-3 hover:bg-[#2E231F] hover:text-white transition-colors whitespace-nowrap"
+                className="text-[#4A3933] cursor-pointer border border-[#4A3933] px-4 py-3 hover:bg-[#2E231F] hover:text-white transition-colors whitespace-nowrap"
               >
                 Subscribe Now
               </button>
             </form>
-            <p className="text-xs text-[#9B8B7E] mt-2 leading-relaxed max-w-lg">
+            <p className="text-xs text-[#4A3933] mt-2 leading-relaxed max-w-lg">
               By subscribing, you agree to our privacy policy and provide consent to receive updates from our company.
             </p>
           </div>
@@ -46,9 +46,9 @@ export default function Footer() {
                 <li key={s}>
                   <a
                     href="#"
-                    className="text-[#9B8B7E] hover:text-[#2E231F] flex items-center gap-2"
+                    className="text-[#4A3933] hover:text-[#2E231F] flex items-center gap-2"
                   >
-                    <span className="w-3 h-3 border border-[#9B8B7E] inline-block shrink-0" />
+                    <span className="w-4 h-4 rounded border border-[#9B8B7E] inline-block shrink-0" />
                     {s}
                   </a>
                 </li>

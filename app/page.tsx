@@ -48,7 +48,7 @@ const testimonials = [
 ];
 
 const faqs = [
-  { q: "What types of yoga classes do you offer?", a: "We offer Vinyasa Flow, Aerial Yoga, Hot Yoga, and Mat Pilates — all in intimate, small-group or private settings." },
+  { q: "What types of yoga classes do you offer?", a: "We offer a variety of yoga styles, including Hatha, Vinyasa, and Yin Yoga, suitable for all skill levels." },
   { q: "Do I need any prior experience to join your fitness programs?", a: "No, all equipment is provided. Just bring yourself and comfortable clothing." },
   { q: "How do I book a personalized coaching session?", a: "Use our Plans page to choose your practice, pick a date and time, and confirm your booking online." },
   { q: "What should I bring to a yoga class?", a: "Cancellations made 24 hours before the session are fully refunded. Late cancellations may be subject to a fee." },
